@@ -2,27 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>בירוקרטור</title>
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
     <header role="banner">
-      <h1>Welcome to my Website!</h1>
+      <div class="banner">
+        <h1>בירוקרטור</h1>
+          <figure>
+            <img src="/assets/logo.png" alt="website logo" class="logo_img">
+          </figure>
+      </div>
+      <h3 class="slogan">מדריכים בירוקטיים בכל נושא</h3>
+      <h3 class="catch_phrase">איך אפשר לעזור?</h3>
+      <div class="search_bar">
+        <input type="search" name="topic search bar" id="topic_search_bar" placeholder="הכנס בעיה בירוקרטית" />
+        <button type="submit" class="topic_submit_button" id="submit_button">חפש</button>
+      </div>
     </header>
     <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
-
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
+      <h2 id="pitch_paragraph">המדריכים הפופולריים שלנו</h2>
+      <div id="common_problems">
+        <a href="/arnona_discount_toturial.html" class="common_problem_button">
+          <article class="common_problem"  id="arnona_problem_1">
+            <h3>הנחה בארנונה לסטודנטים בבאר שבע</h3>
+            <img src="/assets/arnona_img.png" alt="picture of arnona" class="common_problem_img">
+            <p>הנחה בארנונה - איך להשיג ומה צריך להגיש</p>
+          </article>  
+        </a>
+        <a href="/arnona_discount_toturial.html" class="common_problem_button">
+          <article class="common_problem" id="arnona_problem_2">
+            <h3>הנחה בארנונה לסטודנטים בירושלים</h3>
+            <img src="/assets/arnona_img.png" alt="picture of arnona" class="common_problem_img">
+            <p>הנחה בארנונה - איך להשיג ומה צריך להגיש</p>
+          </article>
+        </a>
+        <a href="/arnona_discount_toturial.html" class="common_problem_button">
+          <article class="common_problem" id="arnona_problem_3">
+            <h3>הנחה בארנונה לסטודנטים בתל אביב</h3>
+            <img src="/assets/arnona_img.png" alt="picture of arnona" class="common_problem_img">
+            <p>הנחה בארנונה - איך להשיג ומה צריך להגיש</p>
+          </article>
+        </a>
       </div>
     </main>
-
+    <hr>
+    <footer>
+      <div class="banner">
+        <h2>בירוקרטור</h2>
+          <figure>
+            <img src="/assets/logo.png" alt="website logo" class="logo_img">
+          </figure>
+      </div>
+      <div class="contact_us" id="contact_us_main_bottom">
+        <h4>צרו איתנו קשר: <br> </h4>
+        <ul class="contact_us_list">
+          <li>
+            <span><img src="/assets/phone-icon.png" class="contact_us_icon"></span>
+            <span>+972-54-3313267</span>
+          </li>
+          <li>
+            <span><img src="/assets/mail_icon.jpg" class="contact_us_icon"></span>
+            <span>katzitai96@gmail.com</span>
+          </li>
+          <li>
+            <span><img src="/assets/location_icon.png" class="contact_us_icon"></span>
+            <span>145 Betzalel st.</span>
+          </li>
+          <li>            <span><img src="/assets/linkedin_icon.png" class="contact_us_icon"></span>
+            <span>Itai Katz</span></li>
+        </ul>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
